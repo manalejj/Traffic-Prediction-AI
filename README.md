@@ -1,42 +1,51 @@
-# Transit-delay-prediction
+# 🚄 Rail Transit Delay Prediction System (AI Prototype)
 
+![Python](https://img.shields.io/badge/Python-3.8%2B-blue?style=for-the-badge&logo=python&logoColor=white)
+![Scikit-Learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
+![Status](https://img.shields.io/badge/Status-Prototype-green?style=for-the-badge)
 
-This work demonstrates a practical example of leveraging and merging open data sources to accurately predict transit delays. The corresponding paper, titled Predicting Rail Transit Delays with Machine Learning: Leveraging Open Data Sources' is currently in progress.
+> **A Machine Learning framework to forecast train delays by leveraging open transit data.**
+> *Note: This project serves as a technical proof-of-concept for predictive maintenance and traffic optimization, applicable to national rail networks (e.g., ONCF).*
 
-The main code showcases the utilization of various machine learning methods, including support vector machines (with feature selection and parameter tuning), random forest, gradient boosting, deep neural networks, and linear regression, for transit delay prediction.
+---
 
-The case study focuses on the Canberra Rail System, and the necessary data can be found in the 'Data' folder. Additionally, the release includes the 'Large data' folder, which contains the substantial 'Trip_Update' and 'Vehicle_Update' files (https://github.com/Malek-01/Transit-delay-prediction/releases/tag/Transit).
+## 📖 Overview
 
-The 'plot' folder provides graphical representations comparing real and predicted values for different algorithms. It also includes a side-by-side bar graph illustrating three evaluation metrics: mean absolute error (MAE), root mean square error (RMSE), and symmetric mean absolute percentage error (sMAPE).
+Predicting transit delays is a critical challenge for modern transportation systems. This project explores the use of **Machine Learning (ML)** and **Deep Learning (DL)** to analyze historical trip updates and vehicle positions to predict arrival delays.
 
-For the merging process, the 'merging' folder contains relevant files, and the resulting file, 'data.xlsx,' is available in the release.
+By merging **GTFS (General Transit Feed Specification)** data with real-time updates, this system allows operators to:
+* Identify delay patterns.
+* Optimize scheduling.
+* Improve passenger information systems.
 
-The codes to be executed are located in the main code, namely the following files: SVM-FS.py, GB.py, RF.py, DNN.py, and LR.py.
+*This repository contains case studies based on open data from Canberra, Dublin, and Sydney rail systems.*
 
-To enhance the assessment of features influencing delays, two additional case studies have been included, notably for Dublin and Sydney cities. The information about them are available in Dublin case study and Sydney case study, respectively.
+---
 
-## Contact
+## 🧠 Models & Methodology
 
-For any questions or inquiries, please contact the main contributor:
+We implemented and compared five distinct algorithms to determine the most effective approach for time-series delay prediction:
 
-- Malek Sarhani: malek.sarhani.aui@gmail.com or m.sarhani@aui.ma
+| Algorithm | File | Description |
+| :--- | :--- | :--- |
+| **Random Forest (RF)** | `RF.py` | Ensemble learning method for robust predictions. |
+| **Gradient Boosting (GB)** | `GB.py` | High-performance boosting model for structured data. |
+| **Support Vector Machines** | `SVM-FS.py` | Includes feature selection and parameter tuning. |
+| **Deep Neural Networks** | `DNN.py` | Deep learning architecture for complex pattern recognition. |
+| **Linear Regression** | `LR.py` | Baseline model for performance comparison. |
 
-## Disclaimer
+---
 
-### Computational Results
-The computational results in the paper were obtained based on initial experiments. During further review, it was identified that:
-1. **Support Vector Regression (SVR):** 
-   The code in the paper mistakenly fit the regression model on raw data instead of the training data. Correcting this issue may result in different values compared to those reported in the paper.
-2. **Data Completeness:**
-   The Canberra dataset originally contained several instances of missing data. We aimed to handle these missing values using appropriate preprocessing techniques.
+## 📂 Project Structure
 
-**Note:** Due to that data completeness issue, the public sharing of the dataset has been temporarily suspended until this is fully addressed.
-
-### Reproducibility
-While we have shared the code and data, differences in results may arise due to factors such as:
-- Variations in data preprocessing or imputation methods.
-- Changes in software libraries or versions.
-- Random state initialization.
-
-If you have further questions, please reach out to us for clarification.
-
+```bash
+├── 📂 Data              # Raw datasets (Canberra, etc.)
+├── 📂 Large data        # Substantial files (Trip_Update, Vehicle_Update)
+├── 📂 merging           # Scripts for data fusion and preprocessing
+├── 📂 plot              # Generated graphs (Actual vs Predicted, Error metrics)
+├── 📜 SVM-FS.py         # Support Vector Machine Implementation
+├── 📜 RF.py             # Random Forest Implementation
+├── 📜 GB.py             # Gradient Boosting Implementation
+├── 📜 DNN.py            # Deep Neural Network Implementation
+└── 📜 README.md         # Project Documentation
