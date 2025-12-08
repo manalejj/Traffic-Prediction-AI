@@ -2,7 +2,7 @@
 """
 Created on Tue Jul  6 20:10:45 2021
 
-@author: Malek
+@author: Manal
 """
 
 import numpy as np
@@ -103,4 +103,5 @@ plt.show()
 # Save predictions to Excel
 y_pred_df = pd.DataFrame(y_pred, columns=['Predicted'])
 y_pred_df.to_excel('Predicted_values.xlsx', index=False, sheet_name='Predictions')
+
 
