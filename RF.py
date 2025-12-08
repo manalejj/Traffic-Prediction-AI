@@ -23,7 +23,7 @@ df4 = pd.read_csv('/Data/Stops.txt', low_memory=False)
 df1 = pd.read_csv('/Data/Vehicle_Update.csv', low_memory=False)
 df2 = pd.read_csv('/Data/Trip_Update.csv', low_memory=False)
 df5 = pd.read_excel('/Data/Weather.xlsx', sheet_name=0)
-df6 = pd.read_excel('/Data/Patronage_Proceeded.xlsx', sheet_name=0)
+data = pd.read_excel('Sydney2.xlsx', sheet_name=0, engine='openpyxl')
 
 # Merge datasets
 try:
