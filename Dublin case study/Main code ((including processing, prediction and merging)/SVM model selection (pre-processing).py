@@ -1,9 +1,4 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Tue Jul  6 20:10:45 2021
 
-@author: Malek
-"""
 from sklearn.model_selection import RepeatedKFold
 from sklearn.model_selection import GridSearchCV
 import numpy as np

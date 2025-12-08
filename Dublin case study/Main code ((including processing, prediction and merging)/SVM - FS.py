@@ -1,9 +1,4 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Tue Jul  6 20:10:45 2021
 
-@author: Malek
-"""
 from sklearn.svm import SVR
 from sklearn.feature_selection import SelectKBest, mutual_info_regression
 from sklearn.feature_selection import SelectFromModel

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 
-@author: Malek
+@author: Manal
 """
 from sklearn.model_selection import RepeatedKFold
 from sklearn.model_selection import GridSearchCV
