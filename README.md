@@ -30,7 +30,7 @@ We evaluated multiple algorithms to ensure robustness. Below are the visual resu
 ### 1. Prediction Accuracy (Random Forest)
 The Random Forest model achieved an **R² Score of ~0.87** with a Mean Absolute Error (MAE) of **< 1 minute**, demonstrating high reliability for real-time applications.
 
-![Random Forest Results](Traffic-Prediction-AI\RF_Result.png)
+![Random Forest Results](RF_Result.png)
 *(Fig 1: Actual vs. Predicted Delays showing close alignment)*
 
 ### 2. Feature Importance Analysis (Gradient Boosting)
@@ -48,7 +48,7 @@ The Deep Neural Network (DNN) demonstrated strong convergence, minimizing the lo
 ### 4. System Overview & Data Flow
 Visual representation of the data pipeline and processing architecture.
 
-![System Architecture](YOUR_4TH_IMAGE_NAME.png)
+![System Architecture](image_dad4fd.png)
 *(Fig 4: Architecture Diagram / Data Visualization)*
 
 ---
