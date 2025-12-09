@@ -45,6 +45,12 @@ The Deep Neural Network (DNN) demonstrated strong convergence, minimizing the lo
 ![DNN Loss Curve](DNN_Curve.png)
 *(Fig 3: Training Loss Curve showing model learning progress)*
 
+### 4. System Overview & Data Flow
+Visual representation of the data pipeline and processing architecture.
+
+![System Architecture](YOUR_4TH_IMAGE_NAME.png)
+*(Fig 4: Architecture Diagram / Data Visualization)*
+
 ---
 
 ## 🧠 Models & Methodology
