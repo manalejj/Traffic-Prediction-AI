@@ -45,11 +45,11 @@ The Deep Neural Network (DNN) demonstrated strong convergence, minimizing the lo
 ![DNN Loss Curve](DNN_Curve.png)
 *(Fig 3: Training Loss Curve showing model learning progress)*
 
-### 4. System Overview & Data Flow
-Visual representation of the data pipeline and processing architecture.
+### 4. Baseline Comparison (Linear Regression)
+We used Linear Regression as a baseline to validate the performance improvements of our advanced models.
 
-![System Architecture](image_dad4fd.png)
-*(Fig 4: Architecture Diagram / Data Visualization)*
+![Baseline Comparison](Baselines_Comparison.png)
+*(Fig 4: Linear Regression baseline performance)*
 
 ---
 
