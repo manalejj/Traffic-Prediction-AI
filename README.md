@@ -30,25 +30,25 @@ We evaluated multiple algorithms to ensure robustness. Below are the visual resu
 ### 1. Prediction Accuracy (Random Forest)
 The Random Forest model achieved an **R² Score of ~0.87** with a Mean Absolute Error (MAE) of **< 1 minute**, demonstrating high reliability for real-time applications.
 
-![Random Forest Results](RF_Result.png)
+![Random Forest Results](RF_Result.png.png)
 *(Fig 1: Actual vs. Predicted Delays showing close alignment)*
 
 ### 2. Feature Importance Analysis (Gradient Boosting)
 Using Gradient Boosting, we identified the key drivers of delays. This analysis allows operators to focus on high-impact factors like **Rush Hour** and **Weather Conditions**.
 
-![Feature Importance](GB_Features.png)
+![Feature Importance](GB_Features.png.png)
 *(Fig 2: Relative importance of factors influencing transit delays)*
 
 ### 3. Deep Learning Convergence (DNN)
 The Deep Neural Network (DNN) demonstrated strong convergence, minimizing the loss function over training epochs to capture complex non-linear traffic patterns.
 
-![DNN Loss Curve](DNN_Curve.png)
+![DNN Loss Curve](DNN_Curve.png.png)
 *(Fig 3: Training Loss Curve showing model learning progress)*
 
 ### 4. Baseline Comparison (Linear Regression)
 We used Linear Regression as a baseline to validate the performance improvements of our advanced models.
 
-![Baseline Comparison](Baselines_Comparison.png)
+![Baseline Comparison](LR.png)
 *(Fig 4: Linear Regression baseline performance)*
 
 ---
